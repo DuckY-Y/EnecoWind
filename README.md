@@ -16,10 +16,17 @@ This script is responsible for copying the logs from the `SOURCE_DIR` to the `DE
 
 This script updates the cron jobs according to the configuration set in `config_cron.sh`. It should be run whenever there are changes to the configuration.
 
+### [setup_ssh.sh](setup_ssh.sh)
+
+This script sets up SSH access to the remote machine. It creates an ed25519 SSH key if it doesn't already exist and copies the public key to the `authorized_keys` file on the remote machine. It uses the `REMOTE_MACHINE` variable from the `config_cron.sh` file.
+
+
 ## Usage
 
 1. Set up the configuration variables in `config_cron.sh`.
-2. Run `update_cron.sh` to update the cron jobs.
-3. The `copy_cron.sh` script will run at the frequency set in the cron jobs, copying the logs from the source to the destination directory.
+2. If not already done: Run `setup_ssh.sh` to set up SSH access to the remote machine.
+3. Run `update_cron.sh` to update the cron jobs.
+4. The `copy_cron.sh` script will run at the frequency set in the cron jobs, copying the logs from the source to the destination directory.
+
 
 *Please ensure that you have the necessary permissions to run these scripts and access the directories and remote machine specified in the configuration.*
