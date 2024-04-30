@@ -23,3 +23,4 @@ This script updates the cron jobs according to the configuration set in `config_
 3. The `copy_cron.sh` script will run at the frequency set in the config, copying the logs from the source to the destination directory.
 
 *Please ensure that you have the necessary permissions to run these scripts and access the directories and remote machine specified in the configuration.*
+*Don't forget to add public key to authorized_keys on target machine*
