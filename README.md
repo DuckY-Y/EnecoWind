@@ -1,4 +1,4 @@
-# Cron Job Configuration Scripts
+# Cron Job Copy Script
 
 This repository contains scripts for configuring and managing cron jobs.
 
