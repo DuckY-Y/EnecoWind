@@ -20,6 +20,6 @@ This script updates the cron jobs according to the configuration set in `config_
 
 1. Set up the configuration variables in `config_cron.sh`.
 2. **Run** `update_cron.sh` to update the cron jobs.
-3. The `copy_cron.sh` script will run at the frequency set in the cron jobs, copying the logs from the source to the destination directory.
+3. The `copy_cron.sh` script will run at the frequency set in the config, copying the logs from the source to the destination directory.
 
 *Please ensure that you have the necessary permissions to run these scripts and access the directories and remote machine specified in the configuration.*
