@@ -1,4 +1,4 @@
-# Cron Job Configuration Scripts
+# Cron Job Copy Script
 
 This repository contains scripts for configuring and managing cron jobs.
 
@@ -10,7 +10,7 @@ This script sets up the configuration variables for the cron jobs. It defines th
 
 ### [copy_cron.sh](copy_cron.sh)
 
-This script is responsible for copying the logs from the `SOURCE_DIR` to the `DEST_DIR`. It should be run as a cron job at the frequency set in `CRON_TIME`.
+This script is responsible for copying the logs from the `SOURCE_DIR` to the `DEST_DIR`. It is to be run as a cron job at the frequency set in `CRON_TIME`.
 
 ### [update_cron.sh](update_cron.sh)
 
@@ -24,9 +24,10 @@ This script sets up SSH access to the remote machine. It creates an ed25519 SSH 
 ## Usage
 
 1. Set up the configuration variables in `config_cron.sh`.
-2. If not already done: Run `setup_ssh.sh` to set up SSH access to the remote machine.
-3. Run `update_cron.sh` to update the cron jobs.
+2. Run `setup_ssh.sh` to set up SSH access to the remote machine. ***optional***
+3. **Run** `update_cron.sh` to update the cron jobs.
 4. The `copy_cron.sh` script will run at the frequency set in the cron jobs, copying the logs from the source to the destination directory.
 
 
 *Please ensure that you have the necessary permissions to run these scripts and access the directories and remote machine specified in the configuration.*
+*Don't forget to add public key to authorized_keys on target machine*
