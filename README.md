@@ -10,7 +10,7 @@ This script sets up the configuration variables for the cron jobs. It defines th
 
 ### [copy_cron.sh](copy_cron.sh)
 
-This script is responsible for copying the logs from the `SOURCE_DIR` to the `DEST_DIR`. It is to be run as a cron job at the frequency set in `CRON_TIME`.
+This script is responsible for copying the logs from the `SOURCE_DIR` to the `DEST_DIR`.
 
 ### [update_cron.sh](update_cron.sh)
 
