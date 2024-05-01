@@ -2,5 +2,5 @@
 
 # Configuration variables
 TARGET_DIR="/mnt/media/usbmemory/"
-DEST_DIR="/home/admin/shore"
+DEST_DIR="/home/admin/Shore"
 REMOTE_MACHINE="172.20.0.110"
