@@ -26,7 +26,7 @@ This script sets up SSH access to the remote machine. It creates an ed25519 SSH 
 1. Set up the configuration variables in `config_cron.sh`.
 2. Run `setup_ssh.sh` to set up SSH access to the remote machine. ***optional***
 3. **Run** `update_cron.sh` to update the cron jobs.
-4. The `copy_cron.sh` script will run at the frequency set in the cron jobs, copying the logs from the source to the destination directory.
+4. The `copy_cron.sh` script will run at the frequency set in the cron jobs, copying the logs from the source to the destination directory. This file could also be run manually.
 
 
 *Please ensure that you have the necessary permissions to run these scripts and access the directories and remote machine specified in the configuration.*
