@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source "./config_cron.sh"
+source "config_cron.sh"
 
 update_cron_job() {
     UPDATE_FILE="./copy_cron.sh"
