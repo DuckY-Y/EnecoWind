@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source "config_cron.sh"
+source "./config_cron.sh"
 
 SSH_KEY="$HOME/.ssh/id_ed25519"
 
